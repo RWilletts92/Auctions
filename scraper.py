@@ -17,6 +17,6 @@ matchedlinks=root.cssselect("li p a")
 
  
 record={}
-for link in matchedlinks:
+for link in matchedlinks[0:300]:
   list=link.text_content()
   print(list.encode('utf-8'))
