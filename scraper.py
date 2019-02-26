@@ -11,7 +11,8 @@ print(html)
 root = lxml.html.fromstring(html)
 root.cssselect("li p a")
 #
-# # Write out to the sqlite database using scraperwiki library
+matchedlinks=root.cssselect("li p a")
+print(matchedlinks)
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
 # # An arbitrary query against the database
