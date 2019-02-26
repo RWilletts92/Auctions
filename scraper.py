@@ -13,6 +13,11 @@ root.cssselect("li p a")
 #
 matchedlinks=root.cssselect("li p a")
 print(matchedlinks)
+
+for link in matchedlinks:
+  list=link.text_content()
+  print(list)
+
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
 # # An arbitrary query against the database
